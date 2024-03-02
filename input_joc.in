@@ -1,0 +1,68 @@
+#
+#
+#
+alfabet input:
+go
+look
+inventory
+take
+drop
+#
+#
+alfabet lista:
+key
+invitation
+chefsHat
+spoon
+sword
+crown
+ancientCoin
+spellBook
+magicWand
+#
+#
+#
+stari LA:
+entranceHall, S
+diningRoom
+kitchen
+armoury
+treasury
+library
+pantry
+throneRoom
+wizardsStudy
+secretExit, F
+#
+#
+#
+tranzitii:
+entranceHall, take, E, entranceHall, E, key
+entranceHall, go, E, diningRoom, E, E 
+entranceHall, go, key, armoury, E, E 
+diningRoom, take, E, diningRoom, E, invitation
+diningRoom, take, E, diningRoom, E, chefsHat
+diningRoom, go, invitation, entranceHall, E, E  
+diningRoom, go, chefsHat, kitchen, E, E 
+kitchen, take, E, kitchen, E, spoon
+kitchen, go, E, diningRoom, E, E 
+kitchen, go, E, pantry, E, E 
+pantry, take, E, pantry, E, E 
+pantry, go, chefsHat, kitchen, E, E 
+armoury, take, E, armoury, E, sword
+armoury, take, E, armoury, E, crown
+armoury, go, invitation, entranceHall, E, E 
+armoury, go, sword, treasury, E, E 
+armoury, go, crown, throneRoom, E, E 
+treasury, take, E, treasury, E, ancientCoin
+treasury, go, ancientCoin, library, E, E 
+treasury, go, E, diningRoom, E, E 
+treasury, go, spellBook, wizardsStudy, E, E 
+library, take, E, library, E, spellBook
+library, go, sword, treasury, E, E 
+library, go, magicWand, secretExit, E, E 
+throneRoom, take, E, throneRoom, E, E 
+throneRoom, go, key, armoury, E, E
+wizardsStudy, take, E, wizardsStudy, E, magicWand
+wizardsStudy, go, sword, treasury, E, E 
+wizardsStudy, go, magicWand, secretExit, E, E 

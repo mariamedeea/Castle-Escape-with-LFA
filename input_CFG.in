@@ -1,0 +1,48 @@
+#
+#
+#
+#
+Variables:
+take
+go
+inventory
+look
+drop
+#
+#
+#
+Terminals:
+key
+invitation
+chefsHat
+spoon
+sword
+crown
+ancientCoin
+spellBook
+magicWand
+entranceHall
+diningRoom
+kitchen
+armoury
+treasury
+library
+pantry
+throneRoom
+wizardsStudy
+secretExit
+""
+#
+#
+#
+#
+Productions:
+<go> ::= "entranceHall" | "diningRoom" | "kitchen" | "armoury" | "treasury" | "library" | "pantry" | "throneRoom" | "wizardsStudy" | "secretExit"
+<take> ::= "key" | "invitation" | "chefsHat" | "spoon" | "sword" | "crown" | "ancientCoin" | "spellBook" | "magicWand"
+<drop> ::= "key" | "invitation" | "chefsHat" | "spoon" | "sword" | "crown" | "ancientCoin" | "spellBook" | "magicWand"
+<inventory> ::= ""
+<look> ::= ""
+#
+#
+#
+End
